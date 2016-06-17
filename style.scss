@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*
+Theme Name: High Octane Ds 2015
+Theme URI: http://www.seanalvis.com/
+Author: Sean Alvis Walker
+Author URI: http://www.seanalvis.com/
+Version: 1.0
+Updated: 06/24/2015
+Description: Ideas to Code and Code to Art
+*/
+/*------------------------------------*\
+    Responsive PHP Site Framework
+      author: Sean Alvis Walker
+      @sean_alvis, www.seanalvis.com
+\*------------------------------------*/
+/*
+This Framework was adopted from the Bravo DMS 
+framework written by Omar Bravo, bravodms.com.
+Thank you for your help and support Mr. Bravo!
+*/
+
+/*------------------------------------*\
+    Initial CSS Files
+\*------------------------------------*/
+@import "includes/_reset";
+@import "compass";
+@import "includes/_ho-grid-v16";
+
+/*------------------------------------*\
+    Variables & Mixins
+\*------------------------------------*/
+@mixin mq($break-point) {
+    @media screen and (min-width: $break-point) { @content; }
+}
+
+$body-bg-color: #fff; // White 
+$sideNav-bg-color: #333; // Dark Grey
+
+
+/*------------------------------------*\
+    Dependant CSS Files
+\*------------------------------------*/
+
+@import "includes/_toolbox";
+@import "includes/_typography";
+@import "includes/_ho-menu-v6";
+@import "includes/_font-awesome";
+
+
+/*------------------------------------*\
+    Foundation
+\*------------------------------------*/
+body {
+    background-color: $sideNav-bg-color;
+    background-image: url('images/shattered.png');
+    background-repeat: repeat;
+}
+
+
+/*------------------------------------*\
+    Top Banner
+\*------------------------------------*/
+
+header {background-color: $body-bg-color;}
+.logo {width:70%; margin:5% 0 0 0; display:inline-block;}
+.logo a:hover {background-color:inherit;}
+@include mq(40em) {
+    header {margin-bottom:3em;}
+    .logo{margin:1em 0;}
+}
+.logoImage{width:15em;}
+
+
+/*------------------------------------*\
+    highOctaneDs Footer
+\*------------------------------------*/
+
+footer {background-color:#222; color:#999;}
+#copyright { 
+    padding-top:2em; padding-bottom:3em;
+
+    .date, .site-by {text-align:center; margin-bottom:1em;}
+    @media screen and (min-width: 768px) {
+        .date {text-align:left;}
+        .site-by {text-align:right;}
+    }
+}
+#highOctaneDS-logo {
+    width: 8em;
+}
+
+/*------------------------------------*\
+    mainNav Icons
+\*------------------------------------*/
+// Remove / Display icons from mainNav.
+@include mq(40em){.mainNav i {display:none;}}
+@include mq(60em){.mainNav i {display:inline-block;}}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    Utilities
+\*------------------------------------*/
+.clr {clear:both;}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.text-center {text-align:center;}
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+.float-center {float:none; margin-left:auto; margin-right:auto;}
+.float-right {float:right;}
+.float-left {float:left;}
+
+.mobile-only {display:block;}
+.desktop-only {display:none;}
+@include mq(40em) {
+	.mobile-only {display:none;}
+	.desktop-only {display:block;}
+}
+.indent {text-indent: 1.5em;}
+.indented-text {clear: both; padding:1em 8% 3em 8%;}
+
+#bravodms-logo {max-width:200px; max-height:20px;}
+
+.desaturate { filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+}
+.desaturate:hover { filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+}
+
+/*------------------------------------*\
+    Facebook Comment Form
+\*------------------------------------*/
+
+#fbcomments,.fb_iframe_widget,.fb_iframe_widget[style],.fb_iframe_widget iframe[style],.fbcomments iframe[style],.fb_iframe_widget span {width: 100% !important;}
+
+/*------------------------------------*\
+    Button Mixins
+\*------------------------------------*/
+
+@mixin btn ($color, $fsize, $radius) {
+	border:solid .15em darken($color, 10%);
+	color: lighten($color, 80%) !important;
+	display: inline-block;
+	font-family: Century Gothic;
+	font-size: $fsize;
+	line-height: $fsize;
+	margin: .5em auto;
+	padding: .25em 5%;
+	text-align:center;
+	width:auto;
+	$color2: darken($color, 15%);
+	background-color: $color; // Old browsers
+	@include filter-gradient($color, $color2, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  $color 43%,$color2 100%));
+	@include border-radius($radius);
+	
+	@include text-shadow (darken($color,30%) .1em .1em .0em, darken($color,50%) -.05em -.05em .1em);/**/
+	i {font-size:.9em;}
+}

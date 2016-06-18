@@ -10,5 +10,5 @@
     </li>
     <li><a href="#"><i class="icon-asterisk"></i> Projects</a></li>
     <li><a href="#"><i class="icon-user"></i> About</a></li>
-    <li><a href="#"><i class="icon-comment"></i> Blog</a></li>    
+    <li><a href="seanalvis-blog.php"><i class="icon-comment"></i> Blog</a></li>    
 </ul>

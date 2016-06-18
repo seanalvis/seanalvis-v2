@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="description" content="<?php echo $description ?>" />
-<meta name="keywords" content="Responsive Web Design, Web Development, Digital Marketing, Freelance Web Designer, St. Petersburg, FL" />
+<meta name="keywords" content="This is the site of Sean Alvis Walker." />
 <title><?php echo $title ?></title>
 
 <meta name="robots" content="all" />
-<meta name="author" content="Sean Alvis Walker, High Octane Ds" />
+<meta name="author" content="Sean Alvis Walker, Sean Alvis" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
 <!-- Facebook Tags -->
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://www.MyDomain.com/"/>
 <meta property="og:image" content="http://www.MyDomain.com/images/fb-icon.jpg"/>
-<meta property="og:site_name" content="Website Name | Slogan"/>
+<meta property="og:site_name" content="Sean Alvis | Sorry Not Sorry"/>
 <meta property="og:description"
       content="This is what my site is all about."/>
       
@@ -36,6 +36,7 @@
 </head>
 
 <body>
+    <?php include_once("analyticstracking.php") ?>
     <nav class="mainNav" role='navigation'>
         <?php include "navigation.php" ?>
     </nav> 
@@ -43,7 +44,7 @@
         <header class="group">
             <a href="#" class="menu-btn" onclick="toggleMenu();"><i class="icon-reorder"></i></a>
             <div class="logo c66p">
-                <img src="images/hods-logo-v2.svg" class="logoImage" alt="High Octane Ds Logo">
+                <h1>Sean Alvis</h1>
             </div>    
         </header>
         

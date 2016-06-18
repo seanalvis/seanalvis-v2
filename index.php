@@ -1,17 +1,15 @@
 <?php 
-	$title = "RWD Framework by High Octane Ds";
-	$description = "Sean Alvis builds cutting edge digital solutions to solve your internet needs.";
-	include "header.php"; ?>
-<br><br>
-<section class="c90p float-center">
-	<main class="c66p">
-		
-		
+	$title = "Sean Alvis Walker";
+	$description = "Welcome to the world of Sean Alvis";
+	include "header.php"; 
+?>
+<main>
+	<section class="c80p float-center text-center">
+				
+		<p>This was my personal site. If you want to know why it looks like shit right now refer to <a href="seanalvis-blog.php">my blog</a>.</p>
 
-		
-		
-		
+	</section> 
 
-</section> 
+</main>	
 <br><br>
 <?php include "footer.php"; ?> 

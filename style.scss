@@ -15,7 +15,7 @@ Description: Ideas to Code and Code to Art
 \*------------------------------------*/
 /*
 This Framework was adopted from the Bravo DMS 
-framework written by Omar Bravo, bravodms.com.
+framework written by Omar Bravo, bravo-delapaz.com.
 Thank you for your help and support Mr. Bravo!
 */
 
@@ -52,10 +52,13 @@ $sideNav-bg-color: #333; // Dark Grey
 \*------------------------------------*/
 body {
     background-color: $sideNav-bg-color;
-    background-image: url('images/shattered.png');
-    background-repeat: repeat;
+    
+    min-height: 100%;
 }
-
+main { 
+    flex: 1 0 auto;
+    padding-top: 6em;
+}
 
 /*------------------------------------*\
     Top Banner
@@ -65,7 +68,7 @@ header {background-color: $body-bg-color;}
 .logo {width:70%; margin:5% 0 0 0; display:inline-block;}
 .logo a:hover {background-color:inherit;}
 @include mq(40em) {
-    header {margin-bottom:3em;}
+    header {margin-bottom:6em;}
     .logo{margin:1em 0;}
 }
 .logoImage{width:15em;}
@@ -75,7 +78,11 @@ header {background-color: $body-bg-color;}
     highOctaneDs Footer
 \*------------------------------------*/
 
-footer {background-color:#222; color:#999;}
+footer {
+    background-color:#222; 
+    color:#999;
+    flex: none;
+}
 #copyright { 
     padding-top:2em; padding-bottom:3em;
 

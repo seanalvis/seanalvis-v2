@@ -13,6 +13,7 @@ Description: Ideas to Code and Code to Art
       author: Sean Alvis Walker
       @sean_alvis, www.seanalvis.com
 \*------------------------------------*/
+
 /*
 This Framework was adopted from the Bravo DMS 
 framework written by Omar Bravo, bravo-delapaz.com.
@@ -25,6 +26,7 @@ Thank you for your help and support Mr. Bravo!
 @import "includes/_reset";
 @import "compass";
 @import "includes/_ho-grid-v16";
+@import "includes/_body-main";
 
 /*------------------------------------*\
     Variables & Mixins
@@ -55,24 +57,30 @@ body {
     
     min-height: 100%;
 }
-main { 
-    flex: 1 0 auto;
-    padding-top: 6em;
-}
+
 
 /*------------------------------------*\
     Top Banner
 \*------------------------------------*/
 
-header {background-color: $body-bg-color;}
-.logo {width:70%; margin:5% 0 0 0; display:inline-block;}
-.logo a:hover {background-color:inherit;}
-@include mq(40em) {
-    header {margin-bottom:6em;}
-    .logo{margin:1em 0;}
-}
-.logoImage{width:15em;}
+header {
+    background-color: $body-bg-color;
+    display: flex;
+    align-items: center;
 
+}
+
+.title-wrap {
+    background-color: $sideNav-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title__h1 {
+    font-size: 4rem;
+}
 
 /*------------------------------------*\
     highOctaneDs Footer

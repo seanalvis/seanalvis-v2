@@ -168,6 +168,10 @@ img {
 /*------------------------------------*\
     End High Octane Grid
 \*------------------------------------*/
+.header__tag {
+  display: flex;
+  align-items: center; }
+
 /*------------------------------------*\
     Variables & Mixins
 \*------------------------------------*/
@@ -297,15 +301,12 @@ blockquote {
   @sean_alvis, www.seanalvis.com
   Updated: 06/24/2015
 \*------------------------------------*/
-#mainPage, .mainNav {
-  width: 100%;
-  position: absolute; }
-
 #mainPage {
   background-color: #fff;
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
+  padding-top: 2em;
   min-height: 100%;
   z-index: 1;
   -moz-transition: left 0.25s ease-in-out 0s;
@@ -368,23 +369,15 @@ blockquote {
 @media screen and (min-width: 40em) {
   .mainNav {
     background-color: #333;
-    text-align: center;
-    top: 4em;
     width: 100%;
     z-index: 10; }
     .mainNav > ul {
       font-size: 0; }
-    .mainNav ul > :first-child {
-      border-left: 1px solid #262626; }
-    .mainNav ul > :last-child {
-      border-right: 1px solid #545454; }
     .mainNav li {
       display: inline-block;
       font-size: 18px; }
     .mainNav a, .mainNav a:link, .mainNav a:visited, .mainNav a:active, .mainNav a:focus {
       border-width: 0;
-      border-right: 1px solid #262626;
-      border-left: 1px solid #545454;
       color: #fff;
       text-decoration: none; }
     .mainNav a:hover {
@@ -1755,32 +1748,23 @@ body {
   background-color: #333;
   min-height: 100%; }
 
-main {
-  flex: 1 0 auto;
-  padding-top: 6em; }
-
 /*------------------------------------*\
     Top Banner
 \*------------------------------------*/
 header {
-  background-color: #fff; }
+  background-color: #fff;
+  display: flex;
+  align-items: center; }
 
-.logo {
-  width: 70%;
-  margin: 5% 0 0 0;
-  display: inline-block; }
+.title-wrap {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
 
-.logo a:hover {
-  background-color: inherit; }
-
-@media screen and (min-width: 40em) {
-  header {
-    margin-bottom: 6em; }
-
-  .logo {
-    margin: 1em 0; } }
-.logoImage {
-  width: 15em; }
+.title__h1 {
+  font-size: 4rem; }
 
 /*------------------------------------*\
     highOctaneDs Footer

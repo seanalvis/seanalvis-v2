@@ -26,6 +26,7 @@
 
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"  />
 <link rel="icon" type="image/x-icon" href="images/favicon.ico"  />
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <!--[if lt IE 9]>
@@ -37,19 +38,21 @@
 
 <body>
     <?php include_once("analyticstracking.php") ?>
+
+
     <nav class="mainNav" role='navigation'>
-        <?php include "navigation.php" ?>
+        <div class="container">
+            <?php include "navigation.php" ?>            
+        </div>
+
     </nav> 
+
+
     <div id="mainPage">
         <header class="group">
-            <a href="#" class="menu-btn" onclick="toggleMenu();"><i class="icon-reorder"></i></a>
-            <div class="logo c66p">
-                <h1>Sean Alvis</h1>
-            </div>    
+            <a href="#" class="menu-btn" onclick="toggleMenu();"><i class="icon-reorder"></i></a> 
         </header>
         
-        
-        <div class="line clr"></div>
 
 
 

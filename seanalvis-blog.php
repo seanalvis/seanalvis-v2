@@ -17,6 +17,16 @@
 		
 	</section>
 
+	<section class="c80p float-center">
+		<h1>Ha! Over a year later!</h1>
+		<div>08/29/2017</div>
+		<p>So, I'm back at it. Let's see if I get a little further this time. I have been so so busy. I am working full time as a front end dev at a software development firm and going to school for programming.</p>
+		<article>
+			
+		</article>
+		
+	</section>
+
 </main>
 
 <?php include "footer.php" ?>

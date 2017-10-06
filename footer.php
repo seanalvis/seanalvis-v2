@@ -4,7 +4,7 @@
   	<div class="c50p date">&copy; Sean Alvis</div>
     <div class="c50p site-by">
     	<a href="http://www.seanalvis.com" target="_blank">
-            <img id="highOctaneDS-logo" src="images/hods-site-by.svg" />
+            <p>site by Sean Alvis</p>
     	</a>
     </div>
 </footer><!-- end footer-->

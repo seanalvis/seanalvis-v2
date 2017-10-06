@@ -4,3 +4,44 @@
 	display: flex;
 	align-items: center;
 }
+
+.hero__wrap {
+	height: 70vh;
+}
+
+.overlay__wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: .3s;
+	z-index: 2;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: red;
+	opacity: .5;
+	
+	z-index: 2;
+	
+}
+
+.overlay__wrap p {
+	color: #fff;
+	position: absolute;
+	z-index: 5;
+}
+
+
+
+

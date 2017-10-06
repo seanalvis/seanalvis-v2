@@ -40,12 +40,10 @@
     <?php include_once("analyticstracking.php") ?>
 
 
-    <nav class="mainNav" role='navigation'>
-        <div class="container">
+        <div class="container-fluid">
             <?php include "navigation.php" ?>            
         </div>
 
-    </nav> 
 
 
     <div id="mainPage">

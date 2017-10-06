@@ -47,14 +47,12 @@ $sideNav-bg-color: #333; // Dark Grey
 @import "includes/_typography";
 @import "includes/_ho-menu-v6";
 @import "includes/_font-awesome";
-
+@import "includes/_custom-bootstrap";
 
 /*------------------------------------*\
     Foundation
 \*------------------------------------*/
-body {
-    background-color: $sideNav-bg-color;
-    
+body {   
     min-height: 100%;
 }
 

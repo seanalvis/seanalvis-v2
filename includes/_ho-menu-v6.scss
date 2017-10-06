@@ -52,7 +52,7 @@ $main-margin-top:4em;
     a, a:link, a:visited, a:active, a:focus {
         border: 0px solid lighten($sideNav-bg-color,7%);
         border-width: 0 0 1px 0;
-        color:$sideNav-text-color;
+        color: black;
         display:block;
         line-height: 3em;
         padding:0 1em;
@@ -67,7 +67,7 @@ $main-margin-top:4em;
 
 @media screen and (min-width: 40em) {
     .mainNav {
-        background-color:$sideNav-bg-color;
+        //background-color:$sideNav-bg-color;
         // text-align:center;
         width:100%;
         z-index:10;

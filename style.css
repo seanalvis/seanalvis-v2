@@ -172,6 +172,36 @@ img {
   display: flex;
   align-items: center; }
 
+.hero__wrap {
+  height: 70vh; }
+
+.overlay__wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+  z-index: 2; }
+  .overlay__wrap:hover {
+    opacity: 1; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  opacity: .5;
+  z-index: 2; }
+
+.overlay__wrap p {
+  color: #fff;
+  position: absolute;
+  z-index: 5; }
+
 /*------------------------------------*\
     Variables & Mixins
 \*------------------------------------*/
@@ -344,7 +374,7 @@ blockquote {
   .mainNav a, .mainNav a:link, .mainNav a:visited, .mainNav a:active, .mainNav a:focus {
     border: 0px solid #454545;
     border-width: 0 0 1px 0;
-    color: #999;
+    color: black;
     display: block;
     line-height: 3em;
     padding: 0 1em;
@@ -368,7 +398,6 @@ blockquote {
 
 @media screen and (min-width: 40em) {
   .mainNav {
-    background-color: #333;
     width: 100%;
     z-index: 10; }
     .mainNav > ul {
@@ -1741,11 +1770,19 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
+.navbar-brand {
+  margin-right: 3rem; }
+
+.nav-link:focus, .nav-link:hover {
+  text-decoration: underline; }
+
+.navbar-brand:hover {
+  text-decoration: underline; }
+
 /*------------------------------------*\
     Foundation
 \*------------------------------------*/
 body {
-  background-color: #333;
   min-height: 100%; }
 
 /*------------------------------------*\

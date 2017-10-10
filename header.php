@@ -20,9 +20,10 @@
 <meta property="og:url" content="http://www.MyDomain.com/"/>
 <meta property="og:image" content="http://www.MyDomain.com/images/fb-icon.jpg"/>
 <meta property="og:site_name" content="Sean Alvis | Sorry Not Sorry"/>
-<meta property="og:description"
-      content="This is what my site is all about."/>
-      
+<meta property="og:description" content="This is what my site is all about."/>
+ 
+<script language="javascript" type="text/javascript" src="scripts/p5.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/sketch-text.js"></script>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"  />
 <link rel="icon" type="image/x-icon" href="images/favicon.ico"  />

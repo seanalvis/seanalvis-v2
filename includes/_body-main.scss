@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+ @font-face {
+    font-family: 'Oswald';
+    src: url('Oswald.ttf') format('truetype');
+} 
+
+.block {
+	display: block;
+}
+
 .header__tag {
 	display: flex;
 	align-items: center;
@@ -7,6 +16,14 @@
 
 .hero__wrap {
 	height: 70vh;
+}
+
+.img-grid__wrap {
+	border: 2px solid #fff;
+} 
+
+.img-grid__wrap img {
+	display: block;
 }
 
 .overlay__wrap {
@@ -40,6 +57,10 @@
 	color: #fff;
 	position: absolute;
 	z-index: 5;
+}
+
+.p-0-\@smPlus {
+	padding: 0;
 }
 
 

@@ -22,6 +22,7 @@
 <meta property="og:site_name" content="Sean Alvis | Sorry Not Sorry"/>
 <meta property="og:description" content="This is what my site is all about."/>
  
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
 <script language="javascript" type="text/javascript" src="scripts/p5.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/sketch-text.js"></script>
 

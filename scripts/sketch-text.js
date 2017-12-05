@@ -4,15 +4,18 @@ var scl = 20,
 var cols, rows, movement = 0;
 var particles = [];
 var flowfield;
-var designSz = [200, 100, 0];  // Bottom word size
-var genSz = [62, 31, 16];  // Top word size
+
+var wordOneSz = [124, 62, 32];
+var wordTwoSz = [200, 100, 0];
+var wordThreeSz = [60, 30, 0];
+
 var genX, genY;
 var scrn = 0;
 var font, bbox, font2, bbox2, bbox3;
-var topWord = "BUILD";
-var bottomWord = "cool";
-var thirdWord = "stuff";
 
+var wordOne = "Sean";
+var wordTwo = "Alvis";
+var wordThree = "Three";
 
 function preload() {
     font = loadFont('Oswald.ttf');
@@ -46,25 +49,24 @@ function setDisplay() {
     particles = [];
     background(200);
     textFont(font);
-    textSize(designSz[scrn]);
+    textSize(wordTwoSz[scrn]);
 
-    bbox = font.textBounds(bottomWord, width / 2, height / 2);
-    genX = [bbox.x - 350, bbox.x - 155, bbox.x - 80];
-    genY = [bbox.y + 38, bbox.y + 25, bbox.y + 13];
-    var points = font.textToPoints(bottomWord, (width / 2) - (bbox.w / 2), (height / 2));
+    bbox = font.textBounds(wordTwo, width / 2, height / 2);
+    genX = [bbox.x - 300, bbox.x - 155, bbox.x - 80];
+    genY = [bbox.y + -20, bbox.y + 25, bbox.y + 13];
+    var points = font.textToPoints(wordTwo, (width / 2) - (bbox.w / 2), (height / 2));
     
     for (var i = 0; i < points.length; i++) {
         var pt = points[i];
         particles[i] = new Particle(pt.x, pt.y);
     }
 
-    bbox3 = font.textBounds(thirdWord, width / 2, height / 2);
-    var points = font.textToPoints(thirdWord, (width / 2) - (bbox.w / 2), (height / 2));
+    bbox3 = font.textBounds(wordThree, width / 2, height / 2);
+    var points3 = font.textToPoints(wordThree, (width / 2) - (bbox.w / 2), (height / 2));
     
-
-    textSize(genSz[scrn]);
-    bbox2 = font.textBounds(topWord, width / 2, height / 2);
-    var points2 = font.textToPoints(topWord, genX[scrn], genY[scrn]);
+    textSize(wordOneSz[scrn]);
+    bbox2 = font.textBounds(wordOne, width / 2, height / 2);
+    var points2 = font.textToPoints(wordOne, genX[scrn], genY[scrn]);
 
     for (var i = 0; i < points2.length; i++) {
         var pt = points2[i];
@@ -78,11 +80,11 @@ function setDisplay() {
 function draw() {
     fill(200);
     noStroke();
-    textSize(designSz[scrn]);
-    text(bottomWord, (width / 2) - (bbox.w / 2), (height / 2));
-    textSize(genSz[scrn]);
+    textSize(wordTwoSz[scrn]);
+    text(wordTwo, (width / 2) - (bbox.w / 2), (height / 2));
+    textSize(wordOneSz[scrn]);
     fill(200);
-    text(topWord, genX[scrn], genY[scrn]);
+    text(wordOne, genX[scrn], genY[scrn]);
     var yoff = 0;
 
     for (var y = 0; y < rows; y++) {

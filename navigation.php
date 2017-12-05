@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 
 	<a class="navbar-brand" href="index.php">Sean Alvis</a>
 
@@ -7,7 +7,7 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-			<a class="nav-item nav-link" href="projects.php">Projects</a>
+			<a class="nav-item nav-link" href="#projects">Projects</a>
 			<a class="nav-item nav-link" href="seanalvis-blog.php">Ramblins'<span class="sr-only">(current)</span></a>		
 			<a class="nav-item nav-link" href="about.php">Who I Am</a>
 		</div>

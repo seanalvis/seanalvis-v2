@@ -171,6 +171,11 @@ img {
 @font-face {
   font-family: 'Oswald';
   src: url("Oswald.ttf") format("truetype"); }
+canvas {
+  position: absolute;
+  top: 3.5em;
+  z-index: 1; }
+
 .block {
   display: block; }
 
@@ -181,11 +186,44 @@ img {
 .hero__wrap {
   height: 70vh; }
 
-.img-grid__wrap {
-  border: 2px solid #fff; }
+.grid-img__wrap {
+  border: 2px solid transparent;
+  overflow: hidden;
+  z-index: 100; }
 
-.img-grid__wrap img {
+.grid-img__wrap:first-child,
+.grid-img__wrap:nth-child(2),
+.grid-img__wrap:nth-child(3) {
+  max-height: 21em; }
+
+.grid-img__wrap:nth-child(4),
+.grid-img__wrap:nth-child(5) {
+  max-height: 19.75em; }
+
+.grid-img__wrap:nth-child(6),
+.grid-img__wrap:nth-child(7) {
+  max-height: 24.5em; }
+
+.grid-img__text {
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+  left: 16px;
+  z-index: 5; }
+
+.grid-img__wrap h2 {
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 10px; }
+
+.grid-img__wrap img {
   display: block; }
+
+#mainPage {
+  padding-top: 3.5em; }
+
+.navbar {
+  background-color: #fff; }
 
 .overlay__wrap {
   position: absolute;
@@ -210,9 +248,7 @@ img {
   z-index: 2; }
 
 .overlay__wrap p {
-  color: #fff;
-  position: absolute;
-  z-index: 5; }
+  color: #fff; }
 
 .p-0-\@smPlus {
   padding: 0; }
@@ -1807,6 +1843,9 @@ header {
   background-color: #fff;
   display: flex;
   align-items: center; }
+  @media screen and (min-width: smPlus) {
+    header {
+      margin-bottom: 5em; } }
 
 .title-wrap {
   background-color: #333;
